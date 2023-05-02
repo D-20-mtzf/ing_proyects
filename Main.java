@@ -3,13 +3,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.softpong;
-
 /**
  *
- * @author EIT
+ * @author Daniel Martinez y Miguel Parada
  */
+
+/**
+En este ejemplo, primero obtenemos la instancia única de la clase GameConfig utilizando el método estático getInstance.
+Luego, obtenemos los valores actuales de configuración utilizando los métodos get correspondientes y los imprimimos en la consola.
+*/
 public class Main {
-    
+/**
+A continuación, cambiamos algunos valores de configuración utilizando los métodos set correspondientes y volvemos a imprimir los nuevos valores en la consola.
+Cada vez que ejecutamos este método main, obtenemos la misma instancia de la clase GameConfig gracias al patrón Singleton implementado en la clase,
+lo que nos permite mantener la coherencia de la configuración en todo el programa.
+*/
     public static void main(String[] args) {
         // Obtener la instancia de GameConfig
         GameConfig config = GameConfig.getInstance();
